@@ -17,13 +17,29 @@ int y = Convert.ToInt32(Console.ReadLine());
 
 string Quater(int xc, int yc)
 {
-   if (xc > 0 && yc > 0) return "Первая четверть";
- if (xc < 0 && yc > 0) return "Вторая четверть";
- if (xc < 0 && yc < 0) return "Третья четверть";
- if (xc > 0 && yc < 0) return "Четвертая четверть";
-return "Введены некорректные координаты"; 
+    if (xc > 0 && yc > 0) return "Первая четверть";
+    if (xc < 0 && yc > 0) return "Вторая четверть";
+    if (xc < 0 && yc < 0) return "Третья четверть";
+    if (xc > 0 && yc < 0) return "Четвертая четверть";
+    return "Введены некорректные координаты";
 }
+
+// string Quarter(int x, int y)
+// {
+//     switch ((x, y))
+//     {
+//         case ( > 0, > 0):
+//             return "Первая четверь";
+//         case ( < 0, > 0):
+//             return "Вторая четверь";
+//         case ( < 0, < 0):
+//             return "Третья четверь";
+//         case ( > 0, < 0):
+//             return "Четвёртая четверь";
+//         default:
+//             return "Введены некорректные координаты";
+//     }
+// }
 
 string result = Quater(x, y);
 Console.WriteLine(result);
-    
