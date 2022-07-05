@@ -26,3 +26,4 @@ int Revers(int number)
 int result = Revers(num);
 Console.WriteLine($"Произведение чисел от 1 до {num} = {result}");
 
+
