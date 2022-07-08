@@ -30,7 +30,7 @@
 
 
  Console.WriteLine("Введите N: ");
-int num = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine()!);
 
 int[] FillArray(int num)
 {
