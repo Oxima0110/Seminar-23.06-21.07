@@ -8,7 +8,7 @@ Console.Clear();
 
 Console.WriteLine("Введите число: ");
 
-int a = int.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine()!);
 
 int TenToTwo(int n)
 {
