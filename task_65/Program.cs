@@ -11,9 +11,17 @@ int numN = Convert.ToInt32(Console.ReadLine());
 
 void NaturalNumber(int m, int n)
 {
-    if (n < m) return;
-    NaturalNumber(m, n - 1);
-    Console.Write($"{n} ");
+    if (m < n)
+    {
+        Console.Write($"{m} ");
+        NaturalNumber(m + 1, n);
+    }
+    if (m > n)
+    {
+        Console.Write($"{m} ");
+        NaturalNumber(m - 1, n);
+    }
+    if (m == n) Console.Write($"{m} ");
 }
 
 NaturalNumber(numM, numN);
